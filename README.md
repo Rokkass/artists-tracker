@@ -3,17 +3,29 @@
 </h1>
 <p align="center">Discover your favorite Spotify artists with ease. Search by artist name and dive into their world. Get insights into their followers, genres, and popularity, all according to Spotify. Explore the music you love like never before!</p>
 
-<h2>
-  .env file
-</h2>
+<h2 id="getting-started">Getting Started</h2>
 
-Client Id and secret for `NEXT_PUBLIC_CLIENT_ID` and `NEXT_PUBLIC_CLIENT_SECRET` you can get from your [Spotify for Developers Dashboard](https://developer.spotify.com/dashboard).
+To experiment with this application, start by cloning the repository and executing the following commands:
 
-For Bearer token, make a call to the Spotify API. You can do this with the following code, swaping out your-client-id and secret with values from dashboard:
-`curl -X POST "https://accounts.spotify.com/api/token" \
+```bash
+pnpm install
+```
+
+
+Obtain the Client ID and Secret from your [Spotify for Developers Dashboard](https://developer.spotify.com/dashboard), and set them as environment variables `NEXT_PUBLIC_CLIENT_ID` and `NEXT_PUBLIC_CLIENT_SECRET`.
+
+Generate a Bearer token by making an API call to Spotify. Use the following code, replacing `your-client-id` and `your-client-secret` with the values from your dashboard.
+```bash
+curl -X POST "https://accounts.spotify.com/api/token" \
 -H "Content-Type: application/x-www-form-urlencoded" \
 -d "grant_type=client_credentials&client_id=your-client-id&client_secret=your-client-secret"
-`
+```
+
+
+Once your `.env` file is properly configured, run the development server:
+```bash
+pnpm run dev
+```
 
 <h2>Demo</h2>
 
