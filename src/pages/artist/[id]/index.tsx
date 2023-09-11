@@ -5,34 +5,13 @@ import Image from "next/image";
 import { useEffect } from "react";
 import axios from "axios";
 import React from "~/pages";
-
-interface Artist {
-  external_urls: {
-    spotify: string;
-  };
-  followers: {
-    href: null;
-    total: number;
-  };
-  genres: Array<string>;
-  href: string;
-  id: string;
-  images: Array<{
-    height: number;
-    url: string;
-    width: number;
-  }>;
-  name: string;
-  popularity: number;
-  type: string;
-  uri: string;
-}
+import { type Artist } from "~/models/artists.model";
 
 export default function ArtistDetailsPage() {
   const router = useRouter();
   const artistId = router.query.id as string;
 
-  const { isLoading, isError, error, data } = useQuery<Artist, Error>({
+  const { isError, data } = useQuery<Artist>({
     queryKey: ["artist", artistId],
     queryFn: () =>
       axios
