@@ -88,7 +88,7 @@ export default function Home() {
               sortedArtists?.map((item) => (
                 <Link
                   className="flex w-[90%] max-w-[800px] flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-                  href={process.env.NEXT_PUBLIC_URL + "artist/" + item?.id}
+                  href={"artist/" + item?.id}
                   key={item.id}
                 >
                   <div className="flex flex-row items-center gap-4">
