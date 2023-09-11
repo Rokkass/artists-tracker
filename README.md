@@ -29,9 +29,10 @@ pnpm run dev
 
 <h2>Demo</h2>
 
-![Zrzut ekranu 2023-09-11 o 16 34 49](https://github.com/Rokkass/artists-tracker/assets/68167831/8ab66763-e8a8-4893-892a-a145988fae9d)
-![Zrzut ekranu 2023-09-11 o 16 34 59](https://github.com/Rokkass/artists-tracker/assets/68167831/c202b840-2709-4e5a-8d23-ccd38fc7ed7b)
-![Zrzut ekranu 2023-09-11 o 16 34 41](https://github.com/Rokkass/artists-tracker/assets/68167831/85635ab7-f46a-48db-8fcd-cb1f39d808b6)
+![1](https://github.com/Rokkass/artists-tracker/assets/68167831/1153df15-4a21-4d67-b987-ccab3c3549a2)
+![2](https://github.com/Rokkass/artists-tracker/assets/68167831/cab15f07-5ce2-4524-b506-208b5a3cbba3)
+![3](https://github.com/Rokkass/artists-tracker/assets/68167831/c7337d6c-aec2-4c5a-b6fa-eb14110c5842)
+
 
 <h2>Create T3 App</h2>
 
